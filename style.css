@@ -17,7 +17,7 @@
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration:none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 
 }
 
@@ -150,14 +150,14 @@ section{
 }
 
 .home .slide .content{
-    width:85rem;
+    width:95rem;
     color:var(--light-white);
     padding-bottom: 1rem;
 }
 
 .home .slide .content span{
     display: block;
-    font-size: 2.2rem;
+    font-size: 3rem;
     color: var(--main-color);
     font-weight: 700;
     padding-bottom: 1rem;
@@ -584,6 +584,25 @@ section{
    margin-top: 2rem;
 }
 
+.structure{
+    background:var(--main-color);
+}
+.structure .content{
+    background:var(--main-color);
+  
+}
+.structure .content h3{
+    font-size: 3rem;
+    color:var(--black);
+  
+}
+.structure .content p{
+    font-size: 1.5rem;
+    color:var(--black);
+    line-height: 2;
+    padding: 1rem 0;
+    
+}
 
 
 
@@ -624,7 +643,6 @@ section{
 .footer .box-container .box a:hover i{
     color:var(--main-color);
     padding-right: 2rem;
-
 }
 
 .footer .credit{
@@ -634,16 +652,11 @@ section{
     border-top: .1rem solid var(--light-white);
     font-size: 2rem;
     color:var(--white);
-
-
 }
-
 
 .footer .credit span{
     color:var(--main-color);
 }
-
-
 /*media queries */
 @media (max-width:1200px){
     section{
@@ -661,10 +674,13 @@ section{
         padding:3rem 2rem;
         
     }
+    .structure{
+       flex-direction: column;
+    }
 }
 
     .home .slide .content h3{
-        font-size: 7vw;
+        font-size: 4vw;
     }
 .home .swiper-slide-active .content{
     display:inline-block;
