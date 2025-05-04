@@ -80,10 +80,13 @@ section{
     font-size:1.7rem;
     padding:1rem 3rem ;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
-
+.load-more .btn{
+    background:var(--main-color) !important;
+}
 .btn:hover{
-    background: var(--main-color);
+    transform: translateY(-10px);
 }
 
 .heading-title{
@@ -92,7 +95,13 @@ section{
     font-size: 6rem;
     text-transform: uppercase;
     color:var(--black);
-
+}
+.projects-title{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color:var(--white);
 }
 
 .header{
@@ -101,16 +110,16 @@ section{
     z-index:1000;
     background-color: var(--white);
     display:flex;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     box-shadow: var(--box-shadow);
     align-items: center;
     justify-content: space-between;
 }
 
 .header .logo img{
-    max-width: 50px;
-    max-height: 50px;
+    width: 70px;
+    height: 60px;
     object-fit: cover;
 
 }
@@ -145,7 +154,7 @@ section{
     align-items:center;
     justify-content: center;
     background-size: cover !important;
-    background-position: center !important;
+    background-position: bottom !important;
     min-height:60rem;
 }
 
@@ -162,6 +171,7 @@ section{
     font-weight: 700;
     padding-bottom: 1rem;
     animation:fadeIn .3s linear backwards .2s;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8), 0 0 4px rgba(255, 165, 0, 0.6);
 }
 
 .home .swiper-slide-active .content{
@@ -176,6 +186,7 @@ section{
     text-shadow: var(--text-shadow);
     padding:1rem 0;
     animation:fadeIn .3s linear backwards .4s;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 
 }
 
@@ -232,13 +243,16 @@ section{
 .services .box-container .box:hover{
     background: var(--black);
 }
+.services .box-container .box:hover h3{
+    color: var(--white);
+}
 
 .services .box-container .box img{
     height: 7rem;
 }
 
 .services .box-container .box h3{
-    color:var(--white);
+    color:var(--black);
     font-size: 1rem;
     padding-top: 1.2rem;
 }
@@ -266,7 +280,7 @@ section{
 .home-about .content{
     flex:1 1 41rem;
     padding:3rem;
-    background: var(--light-bg);
+    background: var(--main-color);
 }
 
 .home-about .content h3{
@@ -282,7 +296,7 @@ section{
 }
 
 .home-package{
-    background: var(--light-bg) ;
+    background: var(--black) ;
 }
 
 .home-package .box-container{
@@ -606,6 +620,7 @@ section{
 }
 .structure .image img{
     max-width: 100%; 
+    width: 100%;
 }
 
 
@@ -660,6 +675,12 @@ section{
 
 .footer .credit span{
     color:var(--main-color);
+}
+
+.footer .career-desc{
+    font-size: 14px;
+    color:var(--white);
+    margin-bottom:10px;
 }
 /*media queries */
 @media (max-width:1200px){
