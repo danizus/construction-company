@@ -7,7 +7,6 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
    <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 
@@ -16,10 +15,9 @@
 <a href="/home.html" class="logo"> <img src="./assets/al ibdaa al mithali-logo.png" alt="logo"></a>
 <nav class ="navbar">
     <a href="/home.html">Home</a>
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#Organizational">Organizational Structure</a>
+    <a href="/residential.html">Residential Projects</a>
+    <a href="/commercial.html">commercial Projects</a>
+
 </nav>
 
 <div id="menu-btn" class="fas fa-bars"></div>
@@ -27,7 +25,6 @@
 <!-- header section ends -->
 
 <!-- home section starts -->
-
 <section class="home">
     <div class=" swiper home-slider">
         <div class="swiper-wrapper">
@@ -54,10 +51,9 @@
  <!-- home section ends  -->
 <!--services section starts -->
 
-<section id="services" class="services">
+<section id="services" class="services container">
 
     <h1 class="heading-title">Our Services</h1>
-
     <div class="box-container">
         <div class="box">
             <img src="./assets/sign.png" alt="" > 
@@ -67,7 +63,6 @@
             <img src="./assets/sign1.png" alt="" > 
             <h3>Commercial Construction</h3>
         </div>
-
         <div class="box">
             <img src="./assets/sign2.png" alt="" > 
             <h3>Renovations</h3>
@@ -93,12 +88,14 @@
 
 <!-- home about section starts -->
 
-<section id="about" class="home-about">
+<section id="about" class="container">
+ 
+   <div class="home-about">
    <div class="image">
         <img src="assets/aboutus.jpg" alt="" >
     </div> 
     <div class="content">
-        <h3>About Us</h3>
+         <h3 class="about-title">About Us</h3>
         <p>Al Ibdaa Al Mithali Building Contracting LLC,
             your trusted partner in comprehensive
             Construction Services. With a commitment to
@@ -116,6 +113,7 @@
             standards.</p>
         <!-- <a href="About.php" class="btn">Read More</a> -->
     </div>
+    </div> 
 </section>
 <!-- home about sectione ends  -->
 
@@ -157,13 +155,32 @@
 </section> -->
 
 <section id="projects" class="home-package">
-    <h1 class="projects-title">Our Projects</h1>
+   <div class="container">
+     <h1 class="projects-title">Our Projects</h1>
+    <p class="projects-content">We categorize our projects into Residential and Commercial sectors to better serve our clients' diverse needs. Whether you're looking to build a dream home or develop a commercial space, you can explore our portfolio by selecting the category below</p>
     <div class="box-container project-list" id="projectList">
-        <!-- Projects will be injected here -->
+       <a href="/residential.html" class="box">
+        <div class="image">
+            <img src="./assets/project2.jpg" alt="Residential Projects">
+        </div>
+        <div class="content ">
+            <h3>Residential Projects</h3>
+            <p>We build exceptional homes that blend comfort, quality, and timeless design..</p>
+            <button class="btn">View All</button>
+        </div>
+       </a>
+       <a href="/residential.html" class="box">
+        <div class="image">
+            <img src="./assets/project12.jpg" alt="Residential Projects">
+        </div>
+       <div class="content ">
+            <h3>Commercial Projects</h3>
+            <p>We construct high-performing commercial spaces that elevate your business and stand the test of time.</p>
+            <button class="btn">View All</button>
+        </div>
+       </a>
     </div>
-    <div class="load-more">
-        <button id="loadMoreBtn" class="btn">See more projects</button>
-    </div>
+   </div>
 </section>
 
  <!-- home package section ends -->
@@ -171,9 +188,9 @@
 
  <!-- home offer section starts -->
 
- <section id="Organizational" class="structure">
+ <section id="Organizational" class="structure container">
     <div class="content">
-        <h3>Our Organizational Structure</h3>
+        <h3>Our Creative Team</h3>
         <p>
             Al Ibdaa Al Mithali Building. Cont
             is a reputable construction firm
@@ -206,10 +223,10 @@
 <!--footer sectrion starts -->
 <section class="footer">
 
-<div class="box-container">
+<div class="box-container container">
 
     <div class="box">
-        <h3>Career</h3>
+        <h3>Careers</h3>
         <p class="career-desc">Join our dynamic team and shape the future with innovative solutions.
             We're always on the lookout for passionate individuals ready to grow and make an impact.</p>
         <a href="mailto:hr@ibdacontracting.ltd"> <i class="fas fa-envelope"></i>hr@ibdacontracting.ltd</a>
@@ -222,13 +239,10 @@
         <a href="https://maps.app.goo.gl/wev9QoFsGqA3NjEc6?g_st=iwb" target="_blank"> <i class="fas fa-map"></i>Industrial Area Kalba - Sharjah</a>
 
     </div>
-
-
     <div class="box">
         <h3>follow us</h3>
         <a href="https://www.instagram.com/alibda_almithali?igsh=MXdzZHFxcXRndDFtbw=="> <i class="fab fa-instagram"></i>instagram</a>
     </div>
-
 </div>
 </section>
 

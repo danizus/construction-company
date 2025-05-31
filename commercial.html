@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="header">
+      <a href="/home.html" class="logo">
+        <img src="./assets/al ibdaa al mithali-logo.png" alt="logo"
+      /></a>
+      <nav class="navbar">
+        <a href="/home.html">Home</a>
+        <a href="/residential.html">Residential Projects</a>
+        <a href="/commercial.html">commercial Projects</a>
+      </nav>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+
+    <div class="container">
+      <h1 style="margin-top: 20px; font-size: 6em">Commercial Projects</h1>
+
+      <div class="residential-projects" id="residential-projects"></div>
+    </div>
+    <section class="footer">
+      <div class="box-container container">
+        <div class="box">
+          <h3>Careers</h3>
+          <p class="career-desc">
+            Join our dynamic team and shape the future with innovative
+            solutions. We're always on the lookout for passionate individuals
+            ready to grow and make an impact.
+          </p>
+          <a href="mailto:hr@ibdacontracting.ltd">
+            <i class="fas fa-envelope"></i>hr@ibdacontracting.ltd</a
+          >
+        </div>
+        <div class="box">
+          <h3>Contact Info</h3>
+          <a href="tel:+971501421912">
+            <i class="fas fa-phone"></i>+971501421912</a
+          >
+          <a href="tel:+971505327033">
+            <i class="fas fa-phone"></i> +971505327033</a
+          >
+          <a href="mailto:contact@ibdacontracting.ltd">
+            <i class="fas fa-envelope"></i> contact@ibdacontracting.ltd</a
+          >
+          <a
+            href="https://maps.app.goo.gl/wev9QoFsGqA3NjEc6?g_st=iwb"
+            target="_blank"
+          >
+            <i class="fas fa-map"></i>Industrial Area Kalba - Sharjah</a
+          >
+        </div>
+        <div class="box">
+          <h3>follow us</h3>
+          <a
+            href="https://www.instagram.com/alibda_almithali?igsh=MXdzZHFxcXRndDFtbw=="
+          >
+            <i class="fab fa-instagram"></i>instagram</a
+          >
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const projects = [
+          {
+            title: "Smart villa And Home Automation",
+            image: "./assets/project1.jpg",
+          },
+          { title: "Residential Project", image: "./assets/project2.jpg" },
+          { title: "Luxury - High end Villas", image: "./assets/project3.jpg" },
+          { title: "Interiors And Decor", image: "./assets/project4.jpg" },
+          { title: "Interiors And Decor", image: "./assets/project5.jpg" },
+          { title: "Eco-Friendly Paints", image: "./assets/project6.jpg" },
+          { title: "Elegant Villas", image: "./assets/project7.jpg" },
+          { title: "Traditional Villas", image: "./assets/project8.jpg" },
+          { title: "Green concrete", image: "./assets/project9.jpg" },
+          { title: "Green concrete", image: "./assets/project10.jpg" },
+          { title: "Mountain View Villas ", image: "./assets/project11.jpg" },
+          { title: "Industrial Projects", image: "./assets/project12.jpg" },
+          { title: "Decor Work", image: "./assets/project13.jpg" },
+          { title: "Interiors", image: "./assets/project14.jpg" },
+          { title: "High End Villa", image: "./assets/project16.jpg" },
+          { title: "Luxury Beach Villas", image: "./assets/project17.jpg" },
+        ];
+
+        const container = document.getElementById("residential-projects");
+
+        projects.forEach((project) => {
+          const projectBox = document.createElement("div");
+          projectBox.className = "project-box";
+          projectBox.innerHTML = `
+        <img src="${project.image}" alt="${project.title}" class="project-img" />
+        <h3 class="project-title">${project.title}</h3>
+        <p class="project-description">This is a project</p>
+      `;
+          container.appendChild(projectBox);
+        });
+      });
+    </script>
+  </body>
+</html>
