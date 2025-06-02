@@ -134,6 +134,21 @@ section {
   padding: 10px;
   position: relative;
 }
+ .mob-menu{
+    display: none;
+  }
+@media (max-width: 767px) {
+  .web-menu{
+    display: none;
+  }
+  .mob-menu{
+    display: block;
+  }
+  .navbar{
+    flex-direction: column;
+    gap:5px;
+  }
+}
 
 .navbar a {
   text-decoration: none;
