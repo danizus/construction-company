@@ -4,25 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-   <link rel="stylesheet" href="style.css">
-  
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="header">
-      <a href="/home.html" class="logo">
-        <img src="./assets/al ibdaa al mithali-logo.png" alt="logo"
-      /></a>
-      <nav class="navbar">
-        <a href="/home.html">Home</a>
-        <a href="/residential.html">Residential Projects</a>
-        <a href="/commercial.html">Commercial Projects</a>
-        <a href="/contactus.html">Contact Us</a>
-      </nav>
+  <section class="header">
 
-      <div id="menu-btn" class="fas fa-bars"></div>
-    </section>
+<a href="/home.html" class="logo"> <img src="./assets/al ibdaa al mithali-logo.png" alt="logo"></a>
+<nav class="navbar">
+  <a href="/home.html">Home</a>
+  <div class="dropdown">
+    <a href="#">Projects <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="14"
+  height="14"
+  viewBox="0 0 24 24"
+  fill="black"
+  stroke="currentColor"
+  stroke-width="3"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <polyline points="6 9 12 15 18 9" />
+</svg>
+</a>
+    <div class="dropdown-content">
+      <a href="/residential.html">Residential Projects</a>
+      <a href="/commercial.html">Commercial Projects</a>
+    </div>
+  </div>
+  <a href="/contactus.html">Contact Us</a>
+</nav>
+
+<div id="menu-btn" class="fas fa-bars"></div>
+</section>
 
     <div class="container">
       <h1 class="heading-title">Commercial Projects</h1>
@@ -75,24 +97,101 @@
       document.addEventListener("DOMContentLoaded", function () {
         const projects = [
           {
-            title: "Smart villa And Home Automation",
-            image: "./assets/project1.jpg",
+            title: "Modern Residential Tower",
+            para: "G+3 apartment complex with modern architecture.",
+            owner: "Muhammad Ahmed Khamiz Al Naqbi",
+            image: "./assets/building1.jpg",
           },
-          { title: "Residential Project", image: "./assets/project2.jpg" },
-          { title: "Luxury - High end Villas", image: "./assets/project3.jpg" },
-          { title: "Interiors And Decor", image: "./assets/project4.jpg" },
-          { title: "Interiors And Decor", image: "./assets/project5.jpg" },
-          { title: "Eco-Friendly Paints", image: "./assets/project6.jpg" },
-          { title: "Elegant Villas", image: "./assets/project7.jpg" },
-          { title: "Traditional Villas", image: "./assets/project8.jpg" },
-          { title: "Green concrete", image: "./assets/project9.jpg" },
-          { title: "Green concrete", image: "./assets/project10.jpg" },
-          { title: "Mountain View Villas ", image: "./assets/project11.jpg" },
-          { title: "Industrial Projects", image: "./assets/project12.jpg" },
-          { title: "Decor Work", image: "./assets/project13.jpg" },
-          { title: "Interiors", image: "./assets/project14.jpg" },
-          { title: "High End Villa", image: "./assets/project16.jpg" },
-          { title: "Luxury Beach Villas", image: "./assets/project17.jpg" },
+          {
+            title: "Urban Business Plaza",
+            para: "G+4 commercial building ideal for offices and retail.",
+            owner: "",
+            image: "./assets/building2.jpg",
+          },
+          {
+            title: "Corporate Office Hub",
+            para: "G+5 executive office structure with spacious interiors.",
+            owner: "",
+            image: "./assets/building3.jpg",
+          },
+          {
+            title: "Premium Mixed-Use Highrise",
+            para: "G+7 tower for mixed commercial and residential use.",
+            owner: "",
+            image: "./assets/building4.jpg",
+          },
+          {
+            title: "Luxury Business Tower",
+            para: "G+7 high-end commercial property in a prime location.",
+            owner: "",
+            image: "./assets/building5.jpg",
+          },
+          {
+            title: "Elegant Villa Residence",
+            para: "G+1 villa featuring classic charm and covered walkway.",
+            owner: "",
+            image: "./assets/building6.jpg",
+          },
+          {
+            title: "Cozy Family Villa",
+            para: "G+1 private villa designed for serene living.",
+            owner: "",
+            image: "./assets/building7.jpg",
+          },
+          {
+            title: "Compact Urban Villa",
+            para: "G+1 villa perfect for small families in urban areas.",
+            owner: "",
+            image: "./assets/building8.jpg",
+          },
+          {
+            title: "Stylish Suburban Villa",
+            para: "G+1 villa blending modern design with practicality.",
+            owner: "",
+            image: "./assets/building9.jpg",
+          },
+          {
+            title: "Executive Villa Estate",
+            para: "G+1 spacious villa with premium finishes and layout.",
+            owner: "",
+            image: "./assets/building10.jpg",
+          },
+          {
+            title: "Peaceful Garden Villa",
+            para: "G+1 villa surrounded by lush landscaping.",
+            owner: "",
+            image: "./assets/building11.jpg",
+          },
+          {
+            title: "Modern Villa Retreat",
+            para: "G+1 stylish retreat for modern living standards.",
+            owner: "",
+            image: "./assets/building12.jpg",
+          },
+          {
+            title: "Private Family Residence",
+            para: "G+1 villa tailored for privacy and comfort.",
+            owner: "",
+            image: "./assets/building13.jpg",
+          },
+          {
+            title: "Elegant Corner Villa",
+            para: "G+1 villa on a corner plot for extra light and space.",
+            owner: "",
+            image: "./assets/building14.jpg",
+          },
+          {
+            title: "Sunlit Villa Home",
+            para: "G+1 residence designed to maximize natural light.",
+            owner: "",
+            image: "./assets/building15.jpg",
+          },
+          {
+            title: "High-Rise Executive Complex",
+            para: "G+5 modern structure for offices and corporate spaces.",
+            owner: "",
+            image: "./assets/building17.jpg",
+          },
         ];
 
         const container = document.getElementById("residential-projects");
@@ -101,10 +200,15 @@
           const projectBox = document.createElement("div");
           projectBox.className = "project-box";
           projectBox.innerHTML = `
-        <img src="${project.image}" alt="${project.title}" class="project-img" />
-        <h3 class="project-title">${project.title}</h3>
-        <p class="project-description">This is a project</p>
-      `;
+      <img src="${project.image}" alt="${project.title}" class="project-img" />
+               <h3 class="project-title">${project.title}</h3>
+              <p class="project-description">${project.para}</p>
+             ${
+               project.owner
+                 ? `<p class="project-owner"><strong>Client Name: ${project.owner}</strong></p>`
+                 : ""
+             }</p>
+            `
           container.appendChild(projectBox);
         });
       });

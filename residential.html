@@ -4,26 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects</title>
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-   <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="header">
-      <a href="/home.html" class="logo">
-        <img src="./assets/al ibdaa al mithali-logo.png" alt="logo"
-      /></a>
-      <nav class="navbar">
-        <a href="/home.html">Home</a>
-        <a href="/residential.html">Residential Projects</a>
-        <a href="/commercial.html">Commercial Projects</a>
-        <a href="/contactus.html">Contact Us</a>
-      </nav>
+  <section class="header">
 
-      <div id="menu-btn" class="fas fa-bars"></div>
-    </section>
+<a href="/home.html" class="logo"> <img src="./assets/al ibdaa al mithali-logo.png" alt="logo"></a>
+<nav class="navbar">
+  <a href="/home.html">Home</a>
+  <div class="dropdown">
+    <a href="#">Projects <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="14"
+  height="14"
+  viewBox="0 0 24 24"
+  fill="black"
+  stroke="currentColor"
+  stroke-width="3"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <polyline points="6 9 12 15 18 9" />
+</svg>
+</a>
+    <div class="dropdown-content">
+      <a href="/residential.html">Residential Projects</a>
+      <a href="/commercial.html">Commercial Projects</a>
+    </div>
+  </div>
+  <a href="/contactus.html">Contact Us</a>
+</nav>
 
+<div id="menu-btn" class="fas fa-bars"></div>
+</section>
     <div class="container">
       <h1 class="heading-title">Residential Projects</h1>
       <div class="residential-projects" id="residential-projects"></div>
@@ -76,23 +98,78 @@
         const projects = [
           {
             title: "Smart villa And Home Automation",
+            para: "A modern G+2 smart villa with integrated home automation in Sharjah.",
+            owner: "Esmail Esa Abbas Al mazmi",
             image: "./assets/project1.jpg",
           },
-          { title: "Residential Project", image: "./assets/project2.jpg" },
-          { title: "Luxury - High end Villas", image: "./assets/project3.jpg" },
-          { title: "Interiors And Decor", image: "./assets/project4.jpg" },
-          { title: "Interiors And Decor", image: "./assets/project5.jpg" },
-          { title: "Eco-Friendly Paints", image: "./assets/project6.jpg" },
-          { title: "Elegant Villas", image: "./assets/project7.jpg" },
-          { title: "Traditional Villas", image: "./assets/project8.jpg" },
-          { title: "Green concrete", image: "./assets/project9.jpg" },
-          { title: "Green concrete", image: "./assets/project10.jpg" },
-          { title: "Mountain View Villas ", image: "./assets/project11.jpg" },
-          { title: "Industrial Projects", image: "./assets/project12.jpg" },
-          { title: "Decor Work", image: "./assets/project13.jpg" },
-          { title: "Interiors", image: "./assets/project14.jpg" },
-          { title: "High End Villa", image: "./assets/project16.jpg" },
-          { title: "Luxury Beach Villas", image: "./assets/project17.jpg" },
+          {
+            title: "Residential Project",
+            para: "Elegant G+1 villa with compound wall designed for family living.",
+            owner: "Rashid Jumma Eid Obaid",
+            image: "./assets/project2.jpg",
+          },
+          {
+            title: "Luxury - High end Villas",
+            para: "Premium G+1 luxury villa with compound wall and top-tier amenities.",
+            owner: "Abdul Aziz Ahmed Al Murashda",
+            image: "./assets/project3.jpg",
+          },
+          {
+            title: "Interiors And Decor",
+            para: "Sophisticated interior design blending modern and classic elements.",
+            owner: "Khalfan Suleiman Saif Alshamsi",
+            image: "./assets/project5.jpg",
+          },
+          {
+            title: "Eco-Friendly Paints",
+            para: "Sustainable G+1 villa with eco-paint and full compound landscaping.",
+            owner: "Syed Suleiman  Alshamsi",
+            image: "./assets/project6.jpg",
+          },
+          {
+            title: "Traditional Villas",
+            para: "Classic G+1 villa with kitchen block and secure compound wall.",
+            owner: "Saif Ahmed Syed Alzabi",
+            image: "./assets/project8.jpg",
+          },
+          {
+            title: "Green concrete",
+            para: "Sustainable construction project using eco-friendly concrete technology.",
+            image: "./assets/project10.jpg",
+          },
+          {
+            title: "Mountain View Villas ",
+            para: "Stunning G+1 villa with compound wall and scenic mountain views.",
+            owner: "Rashid Jumma Eid Obaid",
+            image: "./assets/project11.jpg",
+          },
+          {
+            title: "Industrial Projects",
+            para: "Multi-purpose complex with shops, offices, and garages.",
+            owner: "Ayesha Jummah",
+            image: "./assets/project12.jpg",
+          },
+          {
+            title: "Decor Work",
+            para: "Custom decorative solutions blending tradition and modern design aesthetics.",
+            image: "./assets/project13.jpg",
+          },
+          {
+            title: "Interiors",
+            para: "Elegant interior design tailored to luxury and comfort in every detail.",
+            image: "./assets/project14.jpg",
+          },
+          {
+            title: "High End Villa",
+            para: "Premium villa project crafted with luxury finishes and sophisticated design.",
+            image: "./assets/project16.jpg",
+          },
+          {
+            title: "Luxury Beach Villas",
+            para: "Exclusive G+1 beach villa with compound wall and luxury finish.",
+            owner: "Syed Hassan bilhaj Al Murashta",
+            image: "./assets/project17.jpg",
+          },
         ];
 
         const container = document.getElementById("residential-projects");
@@ -101,9 +178,17 @@
           const projectBox = document.createElement("div");
           projectBox.className = "project-box";
           projectBox.innerHTML = `
-        <img src="${project.image}" alt="${project.title}" class="project-img" />
-        <h3 class="project-title">${project.title}</h3>
-        <p class="project-description">This is a project</p>
+        <img src="${project.image}" alt="${
+            project.title
+          }" class="project-img " />
+         <h3 class="project-title">${project.title}</h3>
+        <p class="project-description">${project.para}</p>
+         ${
+           project.owner
+             ? `<p class="project-owner"><strong>Client Name: ${project.owner}</strong></p>`
+             : ""
+         }</p>
+      
       `;
           container.appendChild(projectBox);
         });
