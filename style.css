@@ -370,8 +370,9 @@ section {
 }
 
 .home-package .box-container .box .image {
-  height: 25rem;
+  height: 350px;
   overflow: hidden;
+ 
 }
 
 .home-package .box-container .box .image img {
