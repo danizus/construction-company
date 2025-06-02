@@ -364,10 +364,6 @@ section {
 .home-package .box-container .box:hover .image img {
   transform: scale(1.1);
 }
-.home-package .box-container .box:hover {
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-  transform: translateY(-10px);
-}
 
 .home-package .box-container .box .image {
   height: 350px;
