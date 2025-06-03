@@ -205,7 +205,7 @@ section {
   align-items: center;
   justify-content: center;
   background-size: cover !important;
-  background-position: bottom !important;
+  background-position: center !important;
   min-height: 60rem;
 }
 
